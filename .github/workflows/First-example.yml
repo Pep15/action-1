@@ -5,7 +5,7 @@ on: push
 jobs:
     first_job:
         runs-on: ubuntu-latest
-        stpes:
+        steps:
         - name: Welcome Message Test
           run: echo "Hello my first Actions job"
 

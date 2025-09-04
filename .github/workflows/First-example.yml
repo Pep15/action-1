@@ -6,6 +6,10 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+        - name: Checkout
+          uses: actions/checkout@v5
+
+
         - name: Welcome Message Test
           run: echo "Hello my first Actions job"
 

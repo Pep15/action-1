@@ -13,12 +13,6 @@ jobs:
     - name:  List Repo Files
       run: ls -ltra
 
-    - name: MyPath
-      run: pwd
-
-    - name: change Dir
-      run: cd workspaces/action-1/.github/workflows/
-      
     - name: Executing shell Script
       run: |
         chmod +x ascii-script.sh

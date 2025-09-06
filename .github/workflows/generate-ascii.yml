@@ -14,6 +14,8 @@ jobs:
       run: ls -ltra
 
     - name: Executing shell Script
-      run: ./ascii-script.sh
+      run: |
+        chmod +x ascii-script.sh
+        ./Pep15/action-1/.github/workflows/ascii-script.sh
     
   

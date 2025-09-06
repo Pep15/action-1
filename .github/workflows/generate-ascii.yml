@@ -17,7 +17,7 @@ jobs:
       run: pwd
 
     - name: change Dir
-      run: cd Pep15/action-1/.github/workflows
+      run: cd /workspaces/action-1/.github/workflows
       
     - name: Executing shell Script
       run: |

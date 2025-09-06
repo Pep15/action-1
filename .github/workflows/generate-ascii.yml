@@ -31,14 +31,14 @@ jobs:
         name: Dragon-text-file
 
     - name: Test File Exists
-      run: grep -i "dragon" fragon.txt
+      run: grep -i "dragon" dragon.txt
 
   deploy_job_3:
     
     needs: [test_job_2 , build_job_1]
     runs-on: ubuntu-latest  
     steps:
-        
+
     - name: Download Dragon text file
       uses: actions/download-artifact@v5
       with:

@@ -10,16 +10,10 @@ jobs:
           uses: actions/checkout@v5
 
 
-        - name: Welcome Message Test
-          run: echo "Hello my first Actions job"
-
-        - name: List Dir
-          run: ls
-
-        - name: Read READM
-          run: cat README.md
-    Second_job:
-        runs-on: windows-latest
-        steps:
-        - name: dir file
-          run: dir 
+        - name: List and Read file
+          run: |
+            echo "Hello my first Actions job"
+            ls -ltra
+            cat README.md
+        - name: Generate ASCII Artwork
+          run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> fragon.txt

@@ -15,8 +15,8 @@ jobs:
               - images: alpine
               - os: windows-latest
             include:
-              - images: amd64/alpine
               - os: ubuntu-20.04
+              - images: amd64/alpine
       runs-on: ${{matrix.os}}
       steps:
         - name: Echo Docker Info

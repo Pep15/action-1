@@ -4,3 +4,4 @@ We will be learing GitHub Actions,
 - automate your software development workflows
 - enhancing productivity and code quality 
 - test1
+- test2

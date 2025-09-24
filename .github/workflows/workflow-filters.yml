@@ -1,15 +1,15 @@
 name: Exploring Workflow Filters And Activities
 
 on:
-  #  workflow_dispatch:
+    workflow_dispatch:
     #schedule:
      # - cron: "*/59 * * * *"
-  #  push:
-  #    branches-ignore:
+    push:
+      branches-ignore:
           #feature/add-music, feature/updateimages
           #test/ui/index,  test/checkout/payment/
-  #      - feature/*           
-  #      - test/**
+        - feature/*           
+        - test/**
      # branches:
      #   - main
      #   - '!feature/*'                 # ignore pushing to any branch name starting with feature using !
@@ -20,7 +20,7 @@ on:
       paths-ignore:                # Workflow will only run when a pull request that includes a change on any file other than README.md
         - README.md
       branches:
-          - main.                  # configures your workflow to only run on pull requests that target specific branches.
+          - main                  # configures your workflow to only run on pull requests that target specific branches.
 
 jobs:
     hello:

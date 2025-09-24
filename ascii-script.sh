@@ -7,6 +7,5 @@ cat dragon.txt
 ls -ltra
 
 
-#adding a comment
-# new a commenting
-# now will check
+# Add comment
+# add comment1

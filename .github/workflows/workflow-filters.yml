@@ -10,9 +10,9 @@ on:
           #test/ui/index,  test/checkout/payment/
         - feature/*           
         - test/**
-      branches:
-        - main
-        - '!feature/*'                 # ignore pushing to any branch name starting with feature using !
+     # branches:
+     #   - main
+     #   - '!feature/*'                 # ignore pushing to any branch name starting with feature using !
     pull_request:
       types:
         - opened

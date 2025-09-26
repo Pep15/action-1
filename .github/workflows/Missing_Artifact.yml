@@ -1,0 +1,34 @@
+# Missing Artifact
+
+name: Missing Artifact
+
+on:
+    push:
+
+jobs:
+    build_job_1:
+      runs-on: ubuntu-latest
+      steps:
+      - name: checkout
+        uses: actions/checkout@v5
+      - name: Write reports on text file
+        run: echo "this report regarding this workflows" >> reports.txt
+
+      - name: upload Artifacite to upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-text-file
+          path: reports.txt
+    build_job_2:
+        runs-on: ubuntu-latest
+        needs: build_job_1
+        steps:
+        - name: Download Artifacite
+          uses: actions/download-artifact@v5
+          with:
+            name: my-artifact
+
+        - name: check file
+          run: cat reports.txt
+        
+

@@ -1,0 +1,20 @@
+# Dependency Problem
+
+name: Dependency Problem
+
+on:
+  push:
+
+jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Read Hello world on build phase
+          run: echo "Hello world we are build phase"
+    deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Read hello world on deploy phase
+          run: echo "Hello world we are deploy phase"
+    
+    
